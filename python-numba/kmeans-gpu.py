@@ -233,7 +233,7 @@ def runKmeans(Points, Points_Clusters,
 
 
 def main():
-    # read points from json file
+    # read points from json file. path should point to the dataset file "points.json"
     with open("../points.json") as f:
         listPoints = list(map(lambda x: (x[0], x[1]), json.loads(f.read())))
 
